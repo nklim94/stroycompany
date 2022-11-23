@@ -1,0 +1,875 @@
+@font-face {
+  font-family: 'inter400';
+  src: url('../fonts/Inter400.ttf'); 
+}
+@font-face {
+  font-family: 'inter500';
+  src: url('../fonts/Inter500.ttf'); 
+}
+@font-face {
+  font-family: 'inter600';
+  src: url('../fonts/Inter600.ttf'); 
+}
+@font-face {
+  font-family: 'inter700';
+  src: url('../fonts/Inter700.ttf'); 
+}
+body {
+	font-family: 'inter400';
+}
+
+.wrapper {
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+.header {
+	padding-top: 17px;
+	font-size: 14px;		
+	position: relative;
+	z-index: 2;
+}
+
+.header__info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 30px;
+	max-width: 1450px;
+	margin: 0 auto;
+	margin-bottom: 20px;	
+	position: relative;
+	z-index: 2;
+}
+
+.header__email, .header__ulitsa {
+	margin-bottom: 10px;
+}
+
+.header__phones {
+	font-family: 'inter700';
+	font-size: 16px;
+	color: #212864;s
+}
+
+.header__phones1{
+	margin-bottom: 8px;
+}
+
+.header__getcall-button {
+	font-family: 'inter700';
+	border: 1px solid #212864;
+	padding: 14px 39px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	color: #212864;
+	background: none;
+	margin-bottom: 8px;
+	cursor:  pointer;
+	transition: all 1s;
+}
+
+.header__getcall-button:hover {
+	background: #212864;
+	color: white;
+}
+
+.header__social-links {	
+	display: flex;
+	justify-content: space-around;
+}
+
+.header__nav {
+	background: #15193D;
+	height: 57px;
+	padding-top: 20px;
+}
+
+.header__nav-lists {	
+	display: flex;
+	justify-content: space-between;
+	max-width: 1366px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header__nav-link {
+	font-family: 'inter700';
+	color: white;
+	text-decoration: none;
+	transition: all .5s;
+}
+
+.header__nav-link:hover {
+	color: #FFC239;
+}
+
+.header__catalogue-submenu{
+	background: #8C93D1;
+	height:  45px;
+	padding: 5px;
+	position: absolute;
+	width: 100%;
+	display: none;
+}
+
+.header__catalogue-lists {	
+	display: flex;
+	justify-content: space-between;
+	max-width: 1366px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header__catalogue-list {
+	width: 20%;
+	text-align: center;
+	border-right: 1px solid white;
+	padding: 7px 0px 7px 0px;
+}
+
+.header__catalogue-link {
+	color: white;
+	text-decoration: none;
+	transition: all .5s;
+}
+
+.header__catalogue-link:hover {
+	color: #FFC239 ;
+}
+
+.first-screen { 
+	background: url('../img/main/mainstroy.png');
+	background-size: cover;
+	padding-top: 300px;
+	margin-bottom: 88px;
+}
+
+.first-screen__title {
+	font-family: 'inter700';
+	color: white;
+	font-size: 48px;
+	max-width: 875px;
+	margin-bottom: 16px;
+}
+
+.first-screen__subtitle {
+	font-family: 'inter500';
+	line-height: 19.5px;
+	color: white;
+	max-width: 472px;
+	margin-bottom: 46px;
+}
+
+.first-screen__calculate-price {
+	color: white;
+	font-family: 'inter500';
+	display: flex;
+	align-items: center;
+	padding-bottom: 281px;
+}
+
+.first-screen__button {
+	width: 70px;
+	height: 70px;	
+	color: inherit;
+	font-size: 35px;
+	border-radius: 50px;
+	background: none;	
+	border: 1px solid white;
+	margin-right: 24px;
+}
+
+.predlozheniya__title {
+	font-family: 'inter500';
+	font-size: 42px;
+	margin-bottom: 32px;
+}
+
+.predlozheniya__list {
+	display: flex;
+	margin-bottom: 32px;
+	max-width: 937px;
+	justify-content: space-between;
+}
+
+.predlozheniya__item {
+	font-size: 20px;
+	color:  #212864;
+	background: #EEEEEE;
+	padding: 12px 35px;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: all .8s;	
+}
+
+.predlozheniya__item:hover {
+	background:	#FFC239;
+}
+
+.predlozheniya__cards {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 32px;
+}
+.predlozheniya__card-title {
+	font-family: 'inter700';
+	font-size: 18px;
+	margin-bottom: 17px;
+	max-width: 240px;
+	padding: 18px 20px 0px 20px;
+}
+
+.predlozheniya__card-subtitle {
+	line-height: 25px;
+	opacity: .6;	
+	width: 100%;	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: 12px;
+	margin-bottom: 28px;
+	padding: 0 20px;
+}
+.predlozheniya__card-left {
+	flex-basis: 70%;
+}
+
+.predlozheniya__card-price {
+	font-family: 'inter700';
+	font-size: 22px;
+	padding: 0px 20px;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.predlozheniya__card {
+	max-width: 284px;
+	box-shadow: 3px 4px 13px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	margin-right: 55px;
+}
+.predlozheniya__button {
+	display: block;
+	margin: 0 auto;
+	height: 60px;
+	width: 320px;
+	background: #353d83;
+	color:  white;
+	font-family: 'inter500';
+	border-radius: 30px;
+	text-transform: uppercase;
+	transition: all 1s;
+	cursor:  pointer;
+	margin-bottom: 124px;
+}
+
+.predlozheniya__button:hover {
+	background: white;
+	border: 1px solid #353d83;
+	color:  black;
+}
+
+.predlozheniya__slider {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	overflow: hidden;
+	padding: 30px;
+	position: relative;
+}
+
+.predlozheniya__button-left {
+	position: absolute;
+	left: 0%;
+	top: 45%;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: all 1s;
+}
+
+.predlozheniya__button-right {
+	position: absolute;
+	right: 0;
+	top: 45%;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: all 1s;
+}
+
+.predlozh__strelka-left_active, .predlozh__strelka-right_active {
+	display: block;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: all .5s;
+}
+
+.strelka_active {
+	opacity: 1;
+}
+
+.mat-kap {
+	display: flex;	
+}
+
+.mat-kap__left-box {
+	flex-basis: 50%;
+}
+
+.mat-kap__img {
+	width: 100%;
+	height: 100%;
+}
+
+.mat-kap__right-box {
+	flex-basis: 50%;
+	background: #F1F1F6;
+	padding: 150px 79px 0px 79px;	
+	position: relative;	
+}
+
+.mat-kap__title {
+	max-width: 496px;
+	font-family: 'inter400';
+	font-size: 38px;
+	margin-bottom: 52px;
+	margin-top: auto;	
+}
+
+.mat-kap__span {
+	font-family: 'inter600';
+}
+
+.button__orange {
+	font-family: 'inter700';
+	width: 141px;
+	height: 141px;
+	border-radius: 140px;
+	cursor: pointer;
+	background: none;
+	border: 1px solid #D79500;
+	transition: all 1s;
+}
+
+.button__orange:hover {
+	background: #D79500;
+	color: white;
+}
+
+.mat-kap__list-numbers {
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	
+	width: 177px;
+}
+
+.mat-kap__strelka-left_active {
+	position: absolute;
+	left: 0;
+	top: 4px;
+	opacity: 0;
+	transition: all 1s;
+}
+ 
+.mat-kap__strelka-right_active {
+	position: absolute;	
+	right: 0;
+	top: 4px;
+	opacity: 0;
+	transition: all 1s;
+}
+
+.mat-kap_active {
+	opacity: 1;
+}
+
+.preimushestva {	
+	background: url('../img/main/preimushestva-bcg.png');
+	background-size: cover;
+	margin-bottom: 179px;
+}
+
+.preimushestva__cards .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 92px;
+	padding-top: 84px;
+}
+
+.preimushestva__cards {
+	background: rgba(246, 246, 249, 0.8);	
+}
+
+.preimushestva__card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+	padding: 23px 20px 23px 44px;
+	box-shadow: 2px 4px 13px rgba(0, 0, 0, 0.15);
+	border-radius: 20px;
+	flex-basis: 49%;
+	margin-bottom: 15px;
+	background: white;
+	opacity: 1 !important;	
+}
+
+.preimushestva__title {
+	font-family:  'inter700';
+	font-size: 42px;
+	margin-bottom: 51px;
+	flex-basis: 100%;
+}
+
+.preimushestva__card-text {
+	max-width: 450px;	
+}
+
+.preimushestva__card-title {
+	font-family:  'inter500';
+	font-size: 20px;
+	margin-bottom: 17px;
+}
+
+.preimushestva__card-subtitle {
+	font-size: 14px;
+	opacity: .6;
+	line-height: 24px;
+}
+
+.hotite{
+	background: rgba(246, 246, 249, 0.9);
+	padding-top: 111px;
+	padding-bottom: 132px;
+}
+
+.hotite .wrapper {
+	display: flex;	
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hotite__title {
+	font-family:  'inter700';
+	font-size: 30px;
+	margin-bottom: 28px;
+	max-width: 620px;
+}
+
+.hotite__subtitle {
+	font-size: 14px;
+	opacity: .6;
+	max-width: 490px;
+	line-height: 24px;
+}
+
+.hotite__button {
+	background: #353D83;
+	color: white;
+	text-transform: uppercase;
+	padding: 23px 43px;
+	border-radius: 30px;
+	border: 1px solid #353D83;
+	transition: all 1s;
+}
+
+.hotite__button:hover {
+	color: black;
+	background: white;
+}
+
+.planirovanie {
+	margin-bottom: 201px;
+}
+
+.planirovanie .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.planirovanie__title {
+	font-size: 30px;
+	margin-bottom: 26px;
+	max-width: 490px;
+}
+
+.planirovanie__subtitle {
+	opacity: .6;	
+	max-width: 490px;
+}
+
+.planirovanie__left-box{
+	background: url('../img/main/Rectangle 599.png');
+	background-size: cover;
+	flex-basis: 50%;
+}
+
+.planirovanie__right-box {
+	flex-basis: 40%;
+	padding-bottom: 170px;
+	position: relative;
+}
+
+.planirovanie__button {
+	position: absolute;
+	right: 8%;
+	bottom: 0;
+}
+
+.otzyvi__stars {
+	display: flex;
+}
+
+.otzyvi__title{
+	font-family: 'Inter700';
+	text-transform: uppercase;
+	color: #808080;
+	margin-bottom: 88px;
+}
+
+.otzyvi__name {
+	font-family: 'Inter700';
+	font-size: 22px;	
+	margin-bottom: 15px;
+}
+
+.otzyvi__stars {
+	margin-bottom: 36px;
+}
+
+.otzyvi {
+	width: 100%;	
+	overflow: hidden;	
+	position: relative;
+}
+
+.otzyvi__cards {
+	display: flex;	
+	background: #F1F1F6;
+	padding-bottom: 77px;
+	position: relative;		
+	min-height: 770px;
+	padding: 0px 20px 77px 20px;	
+	
+}
+
+.otzyvi__card {
+	width: 559px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 72px 62px 92px 62px;
+	border-radius: 0px 0px 15px 15px;
+	background: #FFFFFF;
+	box-shadow: 2px 8px 26px rgba(0, 0, 0, 0.1);	
+	transition: all 2s;	
+	flex-shrink: 0;
+	margin-right: 95px;	
+	z-index: 2;
+}
+
+.card2 {
+	transform: scale(1.1);
+}
+
+.otzyvi__text {
+	margin-bottom: 40px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.otzyvi__polosa {
+	width: 37px;
+	border: 2px solid rgba(255, 194, 57, 0.6);	
+	margin-bottom: 36px;
+}
+
+.otzyvi__vid-rabot {
+	color: rgba(0, 0, 0, 0.6);
+	max-width: 181px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.otzyvi__button-left, .otzyvi__button-right {
+	position: absolute;
+	border: none;
+	font-size: 60px;
+	background: none;
+	transform: scale(1,2);
+	cursor: pointer;
+	transition: all .5s;
+	z-index: 2;
+	color: grey;
+}
+
+.otzyvi__button-left {
+	left:0;
+	bottom: 55%;
+}
+
+.otzyvi__button-right {
+	right: 0;
+	bottom: 55%;
+}
+
+.otzyvi__button-left:hover, .otzyvi__button-right:hover {
+	color: #D79505;
+}
+
+.contact {
+	min-height: 768px;
+	width: 100%;
+	background: url('../img/main/contact-bcg.png');
+	background-size: cover;	
+}
+
+.contact__info {
+	font-family: 'Inter400';
+	max-width: 581px;
+	min-height: 639px;
+	display: flex;
+	flex-direction: column;
+	background: rgba(255, 255, 255, 0.7);
+	padding: 92px 72px 72px 64px;
+	margin-left: 10%;
+	border-radius: 0px 0px 20px 20px;
+}
+.contact__title {
+	font-family: 'Inter700';
+	font-size: 42px;
+	margin-bottom: 42px;
+}
+.contact__adress span{
+	font-family: 'Inter700';
+	font-size: 22px;	
+	display: block;
+}
+.contact__adress {
+	max-width: 324px;
+	margin-bottom: 15px;
+}
+.contact__time-work {
+	max-width: 324px;
+	margin-bottom: 53px;
+}
+.contact__phones-social {
+	display: flex;	
+	justify-content: space-between;
+	align-items: end;
+}
+.contact__phones span {
+	font-family: 'Inter700';
+	font-size: 22px;
+}
+.contact__phones {
+	max-width: 157px;
+	line-height: 30px;	
+}
+.contact__call {
+	margin-bottom: 30px;
+}
+.contact__social ul {
+	margin-top: 15px;
+}
+.contact-link {
+	margin-right: 10px;
+}
+.contact__button {
+	margin-top: 68px;
+	width: 250px;
+	height: 55px;
+	font-family: 'Inter700';
+	background: #FFC239;
+	color: #212864;
+	border: none;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 30px;
+	cursor: pointer;
+	transition: all 1s;
+}
+.contact__button:hover {	
+	background: #212864;
+	color: #FFC239;
+	border: none;	
+}
+.footer {
+	background: #22242E;
+	color: white;
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+.footer__before-line {	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 79px;
+}
+.footer__adress {
+	max-width: 272px;
+}
+.footer__phones {
+	font-family: 'Inter700';
+	max-width: 157px;
+}
+.footer__social {
+	font-family: 'Inter700';
+	max-width: 232px;
+}
+.footer__social-links {
+	margin-top: 18px;
+}
+.footer__line {
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	margin-bottom: 40px;
+}
+
+.footer__after-line {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__buttons {
+	display: flex;
+	flex-direction: column;
+}
+.footer__list {
+	max-width: 180px;
+}
+
+.footer__item {
+	margin-bottom: 18px;
+}
+.footer__list-title {
+	font-family: 'Inter600';
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.footer__link {
+	color: white;
+	text-decoration: none;
+	transition: all .7s;
+}
+.footer__link:hover {
+	opacity: .6;
+}
+.footer__button {
+	font-family: 'Inter700';
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	max-width: 250px;
+	padding: 22px 18px;
+	border: 1px solid #FFC239;
+	border-radius: 50px;
+	color: #FFC239;	
+	background: none;
+	transition: all 1s;
+	margin-bottom: 14px;	
+}
+.footer__button:hover {
+	background: #FFC239;
+	color: white;
+}
+.footer__line2 {
+	border: 1px solid #FFFFFF;
+	opacity: .6;
+	margin-top: 80px;
+	margin-bottom: 10px;
+}
+.footer__policy {
+	opacity: 0.6;
+	text-align: center;
+}
+
+
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 20px;   
+}
+.hamburger__list {  
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;  
+  background: black;
+  font-size: 30px;
+  opacity: .9;
+  transform: translateY(-400px);
+  transition: all 1s;
+  z-index: 0;
+  display: none;   
+}
+.hamburger__list-item {
+  margin-bottom: 10px;  
+  background: black;
+  transition: all 1s; 
+  padding: 0 10px;
+  text-align: center;
+}
+.hamburger__link {
+  color: white;
+  text-decoration: none;
+}
+.hamburger__list_active{
+  transform: translateY(0px);
+  display: none;   
+}
+.hamburger__list-item_active{
+  transform: translateY(0px); 
+}
+.mobile-menu {
+	display: none;
+	min-height: 600px;
+	height: 100vh;
+	width: 100vw;
+	padding: 20px;
+	position: absolute;
+	top: 110px; left: 0;
+	background: white;
+	z-index: 0;
+	transition: all 1s;	
+}
+.mobile-menu__item{
+	margin-bottom: 20px;
+	z-index: 0;
+}
+.mobile-menu__link {
+	font-family: 'Inter700';
+	font-size: 20px;
+	color: #212864;
+	text-decoration: none;	
+}
+.mobile-menu__line {
+	border: 3px solid #FFC239;
+	width: 13%;
+	border-radius: 20px;
+	margin-bottom: 19px;
+}
+.mobile-menu__email, .mobile-menu__phone,.mobile-menu__adress {
+	margin-bottom: 18px;
+}
+.header__social {
+	max-width: 178px;
+}
+.scroll_block {
+	overflow: hidden;
+}
+.bani img {
+	width: 284px;
+	height: 141px;
+	border-radius: 10px 10px 0px 0px;
+}
+.show {
+	display: block;
+}
+.none {
+	display: none;
+}
+.house, .bani {
+	transition: all 0.5s;
+}

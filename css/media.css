@@ -1,0 +1,63 @@
+@media (min-width: 240px) and (max-width: 1198px) {		
+	.header__adress, .header__phones,.header__getcall,.header__nav {
+		display: none;		
+	}	
+	.header, .header__info {
+		background: white;
+		overflow: hidden;
+	}
+	.hamburger {
+  		display: block;  		
+	}	
+	.line1 {
+		width: 40px;
+		height: 6px;
+		background: #353D83;
+		border-radius: 5px;
+		margin-bottom: 7px;
+		transition: all 1s;
+	}
+	.line2 {		
+		width: 36px;
+		height: 6px;
+		background: #353D83;
+		border-radius: 5px;
+		margin-bottom: 7px;
+		margin-left: auto;
+		margin-right: auto;
+		transition: all .5s;	
+	}
+	.line3 {
+		width: 40px;
+		height: 6px;
+		background: #353D83;
+		border-radius: 5px;
+		transition: all .5s;
+	}
+	.line1_active {
+		transform-origin:left top;
+		transform: rotate(45deg);		
+	} 
+	.line2_active {
+		transform: translateX(100px);
+	}
+	.line3_active {
+		transform-origin:left bottom;
+		transform: rotate(-45deg);
+	}	
+	.mobile-menu {
+		display: block
+	}
+	.mobile-menu_hidden {
+		transform: translateY(-6000px);
+	}	
+	.predlozheniya__list{
+		flex-wrap: wrap;
+		justify-content: start;
+	}
+	.predlozheniya__item {
+		margin-right: 20px;
+		margin-bottom: 10px;
+	}
+
+}
